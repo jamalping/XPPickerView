@@ -91,9 +91,14 @@ class XPPickerView: UIView {
         }
     }
     
-//    static func showPickerView(_ pickerViewData: PickerData, pickerViewCallBack: @escaping PickerViewCallBack) -> Void {
-//        
-//    }
+    static func showPickerView(_ pickerViewData: PickerData, pickerViewCallBack: @escaping PickerViewCallBack) -> Void {
+        let pickerView = XPPickerView.init(pickerViewData, pickerViewCallBack: pickerViewCallBack)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.3) {
+            pickerView.show()
+        }
+        
+    }
     
     convenience init(_ pickerViewData: PickerData, pickerViewCallBack: @escaping PickerViewCallBack) {
         self.init(frame: CGRect.init(x: 0, y: screenHeight-(pickViewH+toolBarHeight), width: screenWidth, height: pickViewH+toolBarHeight))
