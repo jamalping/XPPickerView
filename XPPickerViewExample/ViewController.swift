@@ -17,15 +17,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
 
-        let data = PickerData.init(data: [ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                               ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                               ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                               ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])
+//        let data = PickerData.init(data: [ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
+//                               ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
+//                               ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
+//                               ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])
 
-        XPPickerView.showPickerView(data) {
-            print($0.0,$0.1)
-        }
-
+//        let pickerView = XPPickerView.init(.recentYear)
+//        pickerView.show()
         
     }
     
@@ -34,76 +32,46 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showOneColume(_ sender: Any) {
-        let data = PickerData.init(data: [ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                                          ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                                          ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                                          ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])
-        
-        XPPickerView.showPickerView(data) {
-            print($0.0,$0.1)
-        }
+//        let data = PickerData.init(data: [ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
+//                                          ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
+//                                          ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
+//                                          ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])
+//
+//        XPPickerView.showPickerView(data) {
+//            print($0.0,$0.1)
+//        }
+        let pickerView = XPPickerView.init(.recentYear)
+        pickerView.show()
     }
     
     @IBAction func showTwoColume(_ sender: Any) {
-        let data = PickerData.init(data:
-            [ColumnPickerData.init(key: "workID", value: "jamal", data: [
-                ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                ColumnPickerData.init(key: "workID", value: "jamal", data: nil)]),
-             ColumnPickerData.init(key: "workID", value: "lixp", data: [
-                ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                ColumnPickerData.init(key: "workID", value: "lixp", data: nil)]),
-             ColumnPickerData.init(key: "workID", value: "lixiaoping", data: [
-                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil)]),
-             ColumnPickerData.init(key: "workID", value: "jamalping", data: [
-                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
-                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
-                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])])
-        
-        XPPickerView.showPickerView(data) {
-            print($0.0,$0.1)
-        }
+//        let data = PickerData.init(data:
+//            [ColumnPickerData.init(key: "workID", value: "jamal", data: [
+//                ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "jamal", data: nil)]),
+//             ColumnPickerData.init(key: "workID", value: "lixp", data: [
+//                ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "lixp", data: nil)]),
+//             ColumnPickerData.init(key: "workID", value: "lixiaoping", data: [
+//                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil)]),
+//             ColumnPickerData.init(key: "workID", value: "jamalping", data: [
+//                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
+//                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])])
+//
+//        XPPickerView.showPickerView(data) {
+//            print($0.0,$0.1)
+//        }
+        let pickerView = XPPickerView.init(.bussiness)
+        pickerView.show()
     }
     @IBAction func showThreeColume(_ sender: Any) {
-        let data = PickerData.init(data:
-            [ColumnPickerData.init(key: "workID", value: "jamal", data: [
-                ColumnPickerData.init(key: "workID", value: "jamal", data: [
-                    ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "jamal", data: nil)]),
-                ColumnPickerData.init(key: "workID", value: "jamal", data: nil),
-                ColumnPickerData.init(key: "workID", value: "jamal", data: nil)]),
-             ColumnPickerData.init(key: "workID", value: "lixp", data: [
-                ColumnPickerData.init(key: "workID", value: "lixp", data: [
-                    ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "lixp", data: nil)]),
-                ColumnPickerData.init(key: "workID", value: "lixp", data: nil),
-                ColumnPickerData.init(key: "workID", value: "lixp", data: nil)]),
-             ColumnPickerData.init(key: "workID", value: "lixiaoping", data: [
-                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: [
-                    ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil)]),
-                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil),
-                ColumnPickerData.init(key: "workID", value: "lixiaoping", data: nil)]),
-             ColumnPickerData.init(key: "workID", value: "jamalping", data: [
-                ColumnPickerData.init(key: "workID", value: "jamalping", data: [
-                    ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
-                    ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)]),
-                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil),
-                ColumnPickerData.init(key: "workID", value: "jamalping", data: nil)])])
-        
-        XPPickerView.showPickerView(data) {
-            print($0.0,$0.1)
-        }
+        let pickerView = XPPickerView.init(.cityTwoPicker)
+        pickerView.show()
     }
     
     override func didReceiveMemoryWarning() {

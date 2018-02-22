@@ -7,52 +7,54 @@
 //
 
 import UIKit
-
-class XPPickToolBarView: UIToolbar {
-    
-    func initWithCustomerTool() -> UIToolbar {
-        self.barTintColor = UIColor.white
-        let spaceItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        self.items = [cancelItem,spaceItem,spaceItem,sureItem]
-        self.backgroundColor = UIColor.init(red: 246/255.0, green: 248/255.0, blue: 250/255.0, alpha: 1)
-        return self
-    }
-    
-    lazy var cancelItem: UIBarButtonItem = {
-        let button = UIButton.init(type: .custom)
-        let item = UIBarButtonItem.init(customView: button)
-        button.setTitle("取消", for: .normal)
-        button.setTitleColor(.gray, for: .normal)
-        return item
-    }()
-    
-    lazy var sureItem: UIBarButtonItem = {
-        let button = UIButton.init(type: .custom)
-        let item = UIBarButtonItem.init(customView: button)
-        button.setTitle("确定", for: .normal)
-        button.setTitleColor(.red, for: .normal)
-        return item
-    }()
-    
-}
-
-extension UIBarButtonItem {
-    public func acceptBtn() -> UIButton {
-        for view in (self.customView?.subviews)! {
-            if let btnView = view as? UIButton {
-                return btnView
-            } else {
-                continue
-            }
-        }
-        return UIButton()
-    }
-    
-    public func acceptBtn(title: String) -> UIButton? {
-        let btn = self.customView as! UIButton
-        if btn.title(for: .normal) == title {
-            return btn
-        }
-        return nil
-    }
-}
+//class XPBasePickToolBarView: UIToolbar {
+//    
+//    func initWithCustomerTool() -> UIToolbar {
+//        self.barTintColor = UIColor.white
+//        let spaceItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+//        let  spaceItem1 = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)   //左边空格
+//        spaceItem1.width = 15
+//        let  spaceItem2 = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+//        spaceItem2.width = 15
+//        self.items = [spaceItem1,cancelItem,spaceItem,spaceItem,spaceItem,sureItem,spaceItem2]
+//        self.backgroundColor = UIColor.black
+//        return self
+//    }
+//    
+//    func cancelDone() {}
+//    
+//    func sureDone() {}
+//    
+//    func allDone() {}
+//    
+//    // 有的有清除按钮
+//    lazy var allItem: UIBarButtonItem = {
+//        return self.initWithToolBar(title: "清除", titleColor: .darkGray, self, action: #selector(allDone))
+//    }()
+//    
+//    lazy var cancelItem: UIBarButtonItem = {
+//        return self.initWithToolBar(title: "取消", titleColor: .darkGray, self, action: #selector(cancelDone))
+//    }()
+//    
+//    lazy var sureItem: UIBarButtonItem = {
+//        return self.initWithToolBar(title: "确定", titleColor: .red, self, action: #selector(sureDone))
+//    }()
+//    
+//    func initWithToolBar(title:String,titleColor:UIColor ,_ target: AnyObject?, action: Selector) -> UIBarButtonItem {
+//        
+//        let btn:UIButton = UIButton.init(type: .custom)
+//        
+//        btn.frame =  CGRect(x: 0, y: 0, width: 42, height: 44)
+//        
+//        btn.setTitle(title, for: .normal)
+//        
+//        btn.setTitleColor(titleColor, for: .normal)
+//        
+//        btn.addTarget(target, action: action, for: .touchUpInside)
+//        
+//        return UIBarButtonItem.init(customView: btn)
+//        
+//    }
+//    
+//}
+//

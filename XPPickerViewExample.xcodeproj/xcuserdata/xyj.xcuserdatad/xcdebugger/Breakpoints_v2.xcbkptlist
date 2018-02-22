@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XPPickerView/XPPickView.swift"
-            timestampString = "536751453.300772"
+            timestampString = "540982537.977616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "init(_:pickerViewCallBack:)"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "sureDone()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,13 +26,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XPPickerView/XPPickView.swift"
-            timestampString = "536751453.300868"
+            timestampString = "540982537.978364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "ads()"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "bind()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XPPickerView/XPPickView.swift"
+            timestampString = "540982537.978667"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "501"
+            endingLineNumber = "501"
+            landmarkName = "initWithToolBar(title:titleColor:_:action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XPPickerView/XPPickView.swift"
+            timestampString = "540982537.9789439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "518"
+            endingLineNumber = "518"
+            landmarkName = "acceptBtn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in XPPickerViewExample):__ObjC.UIBarButtonItem.acceptBtn() -&gt; __ObjC.UIButton"
+                  moduleName = "XPPickerViewExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xyj/Desktop/demo/XPPickerView/XPPickerView/XPPickView.swift"
+                  timestampString = "540982321.566646"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "518"
+                  endingLineNumber = "518"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Array&lt;__ObjC.UIView&gt; in (extension in XPPickerViewExample):__ObjC.UIBarButtonItem.acceptBtn() -&gt; __ObjC.UIButton"
+                  moduleName = "XPPickerViewExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xyj/Desktop/demo/XPPickerView/XPPickerView/XPPickView.swift"
+                  timestampString = "540982321.56839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "518"
+                  endingLineNumber = "518"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
